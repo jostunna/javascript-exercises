@@ -1,12 +1,5 @@
 const removeFromArray = function (array, ...list) {
-  for (let i = 0; i < array.length; i++) {
-    for (let item of list) {
-        if (array[i] === item) {
-            array.splice(i, 1);
-        }
-    }
-  }
-  return array;
+  return array.filter(item => !list.includes(item));
 };
 
 // Do not edit below this line
