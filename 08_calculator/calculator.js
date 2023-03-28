@@ -14,7 +14,13 @@ const sum = function(array) {
   return total;	
 };
 
-const multiply = function() {
+const multiply = function(array) {
+  let product = 1;
+  for (let item of array) {
+    product *= item;
+  }
+
+  return product;
 
 };
 
