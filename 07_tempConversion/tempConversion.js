@@ -6,6 +6,7 @@ const convertToCelsius = function(fahrenheit) {
 
 const convertToFahrenheit = function(celsius) {
   let fahrenheit = (celsius * 1.8) + 32;
+  if (!Number.isInteger(fahrenheit)) return +fahrenheit.toFixed(1);
   return fahrenheit;
 };
 
